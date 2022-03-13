@@ -16,7 +16,7 @@ imglist:
     alt: sales tag
   - url: /assets/work/mya/cover.jpg
     alt: lookbook cover
-  - url: /assets/work/mya/intivation.jpg
+  - url: /assets/work/mya/invitation.jpg
     alt: invitation letter
   - url: /assets/work/mya/letters.jpg
     alt: letterhead
