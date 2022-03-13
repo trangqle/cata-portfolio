@@ -1,0 +1,33 @@
+doctype html
+
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0")
+        title test
+        link(href="/css/layout.css" rel="stylesheet")
+    body
+        .cover
+            header
+                .thinboi#header
+                    a.cata(href='/') Trang Le
+                    nav.cluster
+                        a(href='/') Work
+                        a(href='/contact') Extra
+                    nav.cluster
+                        a(href='/about') About Me
+                        a(href='/contact') Contact
+            main.stack
+                .thinboi.stack
+                    block text
+                    block content
+                div
+                    block overflow
+            footer
+                .thinboi
+                    p.fit
+                        img(src="/assets/icon.svg", alt="icon", style="height: 1rem")
+                    p.fit
+                        small.fit made with 🖤 and
+                            |
+                            a(href="https://www.11ty.dev/")  11ty

@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    /* layout variables */
+    --gap: 1.5rem;
+    /* color */
+    --bg-color: #ffffff;
+    --fg-color : #000000;
+    --accent: salmon;
+}
+
+/* text formatting */
+body, h1, h2, p {
+    margin: 0;
+    line-height: 1.5;
+    font-family: "Untitled Sans";
+    color: var(--fg-color);
+}
+h1, .cata {
+    font-family: "FreightDisp Pro Light";
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.25;
+}
+.caph1::before {
+    content: "";
+    margin-bottom: -0.351em;
+    display: table;
+}
+.caph1::after {
+    content: "";
+    margin-top: -0.274em;
+    display: table;
+}
+.cappara::before {
+    content: "";
+    margin-bottom: -0.4055em;
+    display: table;
+  }
+.cappara::after {
+    content: "";
+    margin-top: -0.3805em;
+    display: table;
+}
+
+a {
+    text-decoration: none;
+    color: var(--fg-color);
+}
+
+/* work link formatting */
+.work {
+    /* font-family: "FreightDisp Pro Light"; */
+    font-weight: 700;
+}
+
+/* layout hooray */
+
+/* global */
+body {
+    margin-inline: min(2vw, var(--gap));
+}
+
+/* cover*/
+.cover {
+    display: flex;
+    flex-direction: column;
+    min-block-size: 100vh;
+}
+.cover > * {
+    flex: auto;
+    margin-block: var(--gap);
+}
+.cover > :first-child:not(:only-child) {
+    flex-grow: 0;
+    margin-block-start: 0;
+}
+.cover > :last-child:not(:only-child) {
+    flex-grow: 0;
+    margin-block-end: 0;
+}
+
+/* stacc */
+.stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.stack > * + * {
+    margin-block-start: var(--gap);
+}
+
+/* grid */
+.grid {
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, calc(30% + var(--gap)), 100%), 1fr));
+}
+
+/* cluster */
+.cluster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* switcher */
+.switcher {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    /* align-items: baseline; */
+}
+.switcher > * {
+    flex-grow: 1;
+    /* taking in a threshold (in this case, 60ch) to figure out the break */
+    flex-basis: calc((60ch - 100%) * 999);
+}
+
+/* make narrower boxes */
+.thinboi {
+    width: 100%;
+    box-sizing: content-box;
+    max-width: min(100%, 120ch);
+    margin-inline: auto;
+}
+.thinboi > .fit {
+    width: fit-content;
+    margin-inline: auto;
+    max-width: min(100%, 80ch);
+}
+
+/* frame */
+img {
+    inline-size: 100%;
+    block-size: 100%;
+}
+.frame {
+    aspect-ratio: 3 / 2;
+}
+.frame > img, .frame > video {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+/* padding */
+.pads {
+    padding-block: 10vh;
+}
+
+/* element specific */
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    padding-block: 0.5vh 0.75vh;
+}
+#header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: baseline;
+}
+#header > :nth-child(2) {
+    order: -1;
+    justify-self: start;
+}
+#header > :nth-child(3) {
+   justify-self: end;
+}
+#header > * {
+    text-align: center;
+}
+
+footer {
+    border-top: 1px solid var(--fg-color);
+    padding-block: 0.75vh;
+}
+
+
+/* fontssssss */
+@font-face {
+    font-family: "FreightDisp Pro Light";
+    font-weight: 400;
+    src: url('/assets/fonts/FreightDispProLight-Regular.woff2') format('woff2'),
+         url('/assets/fonts/FreightDispProLight-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Untitled Sans";
+    font-weight: 400;
+    src: url('/assets/fonts/UntitledSansWeb-Regular.woff2') format('woff2'),
+         url('/assets/fonts/UntitledSansWeb-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Untitled Sans";
+    font-weight: 700;
+    src: url('/assets/fonts/UntitledSansWeb-Bold.woff2') format('woff2');
+}

@@ -1,0 +1,29 @@
+extends layout.pug
+
+block text
+    .switcher.pads
+        section.title.stack
+            h1.caph1 #{info.title}
+            p #{info.date} &#8212; #{info.categories}
+        article.cappara.stack !{content}
+block content
+    .stack
+        if imglist
+            each img in imglist
+                img(src=img.url, alt=img.alt)
+
+        if tags=="work"
+            nav.cluster
+                -
+                    let prev = filters.getPreviousCollectionItem(collections.work, page)
+                    let next = filters.getNextCollectionItem(collections.work, page)
+                if prev
+                    a(href=prev.url)
+                        h2.cata prev
+                else
+                    div
+                if next
+                    a(href=next.url)
+                        h2.cata next
+                else
+                    div
