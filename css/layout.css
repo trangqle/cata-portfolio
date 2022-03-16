@@ -49,6 +49,13 @@ a {
     color: var(--fg-color);
 }
 
+blockquote {
+    border-left: 0.5em solid var(--fg-color);
+    padding-left: 0.5em;
+    margin-left: unset;
+    opacity: 0.6;
+}
+
 /* work link formatting */
 .work {
     /* font-family: "FreightDisp Pro Light"; */
