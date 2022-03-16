@@ -49,6 +49,10 @@ a {
     color: var(--fg-color);
 }
 
+p > a {
+    text-decoration: underline;
+}
+
 blockquote {
     border-left: 0.5em solid var(--fg-color);
     padding-left: 0.5em;
