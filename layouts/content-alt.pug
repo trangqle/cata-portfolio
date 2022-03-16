@@ -1,0 +1,13 @@
+extends layout.pug
+
+block text
+    .switcher.pads
+        section.title.stack
+            h1.caph1 #{info.title}
+            p #{info.date} &#8212; #{info.categories}
+        article.cappara.stack !{content}
+block content
+    .grid
+        if imglist
+            each img in imglist
+                img(src=img.url, alt=img.alt)
