@@ -166,6 +166,7 @@ header {
     top: 0;
     background-color: var(--bg-color);
     padding-block: 0.5vh 0.75vh;
+    z-index: 999;
 }
 #header {
     display: grid;
