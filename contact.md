@@ -1,6 +1,10 @@
 ---
 layout: /content.pug
 info:
-  title: Contact
+  title: Let's Connect
 ---
-hello@example.com
+[hello@trangqle.design](mailto:hello@example.com)
+
+[Behance](https://behance.net/katherine-le)
+
+[Instagram](https://instagram.com/meyuneko)

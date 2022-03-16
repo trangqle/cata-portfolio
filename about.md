@@ -1,7 +1,7 @@
 ---
 layout: /content.pug
 info:
-  title: About Me
+  title: Hello There!
 ---
 ![](/assets/work/test/3.jpg)
 
