@@ -141,6 +141,7 @@ body {
 }
 .thinboi > .fit {
     width: fit-content;
+    width: -moz-fit-content;
     margin-inline: auto;
     max-width: min(100%, 80ch);
 }
