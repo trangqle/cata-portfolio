@@ -23,6 +23,11 @@ h1, .cata {
     font-size: 3rem;
     line-height: 1.25;
 }
+
+.cata {
+    font-size: 2rem;
+}
+
 .caph1::before {
     content: "";
     margin-bottom: -0.351em;
@@ -62,8 +67,9 @@ blockquote {
 
 /* work link formatting */
 .work {
-    /* font-family: "FreightDisp Pro Light"; */
-    font-weight: 700;
+    font-size: 1.25rem;
+    margin-block-start: 0.5rem;
+    letter-spacing: -0.03em;
 }
 
 /* layout hooray */
@@ -105,7 +111,7 @@ body {
 /* grid */
 .grid {
     display: grid;
-    grid-gap: var(--gap);
+    grid-gap: 2rem var(--gap);
     grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, calc(30% + var(--gap)), 100%), 1fr));
 }
 
@@ -152,7 +158,7 @@ img {
     block-size: 100%;
 }
 .frame {
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 1;
 }
 .frame > img, .frame > video {
     inline-size: 100%;
@@ -206,12 +212,6 @@ footer {
 @font-face {
     font-family: "Untitled Sans";
     font-weight: 400;
-    src: url('/assets/fonts/UntitledSansWeb-Regular.woff2') format('woff2'),
-         url('/assets/fonts/UntitledSansWeb-Regular.woff') format('woff');
-}
-
-@font-face {
-    font-family: "Untitled Sans";
-    font-weight: 700;
-    src: url('/assets/fonts/UntitledSansWeb-Bold.woff2') format('woff2');
+    src: url('/assets/fonts/UntitledSans-Regular.woff2') format('woff2'),
+         url('/assets/fonts/UntitledSans-Regular.woff') format('woff');
 }
