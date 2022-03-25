@@ -216,3 +216,10 @@ footer {
     src: url('/assets/fonts/UntitledSans-Regular.woff2') format('woff2'),
          url('/assets/fonts/UntitledSans-Regular.woff') format('woff');
 }
+
+@font-face {
+    font-family: "Untitled Sans";
+    font-weight: 700;
+    src: url('/assets/fonts/UntitledSans-Medium.woff2') format('woff2'),
+         url('/assets/fonts/UntitledSans-Medium.woff') format('woff');
+}
