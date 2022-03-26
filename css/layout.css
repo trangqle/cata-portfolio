@@ -39,7 +39,7 @@ h1 {
 }
 
 .imsad {
-    font-size: clamp(1.5rem, 2.5vw , 2rem);
+    font-size: clamp(1.5rem, 2.25vw , 1.75rem);
 }
 
 .caph1::before {
@@ -128,7 +128,7 @@ body {
 /* grid */
 .grid {
     display: grid;
-    grid-gap: 2rem var(--gap);
+    grid-gap: 3rem var(--gap);
     grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, calc(30% + var(--gap)), 100%), 1fr));
 }
 

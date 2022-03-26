@@ -1,7 +1,7 @@
 extends layouts/layout.pug
 
 mixin entry(url, title, date, categories, thumb)
-        a(href=url)
+        a.stack(href=url)
             .frame.nyoom
                 img(src=thumb, alt=title)
             .cluster.work
