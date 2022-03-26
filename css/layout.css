@@ -73,9 +73,9 @@ p > a {
 }
 
 blockquote {
-    border-left: 0.5em solid var(--fg-color);
-    padding-left: 0.5em;
-    margin-left: unset;
+    border-inline-start: 0.1em solid var(--fg-color);
+    padding-inline-start: 0.75em;
+    margin: 0;
     opacity: 0.6;
 }
 
