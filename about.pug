@@ -1,0 +1,51 @@
+extends layouts/layout.pug
+
+mixin section(title)
+    section.switcher.pads
+        .title.stack
+            h1.caph1 #{title}
+            p &mdash;
+        article.cappara.stack.biggap
+            if block
+                block
+mixin item(name, job, date)
+    details.stack
+        summary.stack.smolgap
+            .cluster
+                strong= name
+                img.icon(src="/assets/icons/plus.svg", alt="expand")
+            if job
+                p #{job} &mdash; #{date}
+            else
+                p #{date}
+        .stack.smolgap
+            block
+block text
+    section.stack.pads
+        h1.caph1 Hello there!
+        p &mdash;
+        .switcher
+            .frame
+                img(src="", alt="me")
+            article.cappara.stack
+                p It was a summer afternoon in 2016 - I picked up Photoshop for the first time to make myself a new wallpaper. Time flies, and in a blink of an eye, here I am in 2022, graduating from School of Art, University of Manitoba as a design practitioner.
+                p Coming from the background of a STEM-based family, I happen to develop a pragmatic approach to research and design, which is personalized by a strong sense of minimalist aesthetic and a touch of femininity.
+                p When I'm not designing you can find me binge reading lifestyle and architecture magazines, playing the piano, or tending to my two succulents.
+block content
+    hr
+    +section("Experience")
+        +item("Addyson Kids", "Designer", "November 2021–present")
+            p Worked alongside the founder to research and develop new branding identity and business collateral for the company that better represents their products, values, and customer base.
+            p Streamlined digital marketing process and increased email campaign turnaround time by 70% in 3 months by planning and designing email components and social media templates databases.
+            p Researched, illustrated and designed clothing patterns.
+        +item("Freelance", "Brand & Visual Designer", "2019–2021")
+            p Conducted in-depth research and conceptualized visual directions for small businesses globally, based on their visions, values, cultures and current design trends.
+            p Developed concepts for logos, brand guidelines, marketing materials and other graphics as required using industry standard software.
+        +item("Vancouver Humane Society", "Graphic Designer", "July 2020–present")
+            p Designed publication layouts for 2 major reports on addressing animal neglect, veterinary outreach services and trauma-informed care that was well-received by internal stakeholders, funders, and the public
+            p Illustrated a series of artworks for a new line of fundraising apparel to provide education and support advocacy efforts on the inherent rights and needs of all animals.
+            p Created diagrams, charts, worksheets and teaching materials for Trauma-Informed & Culturally Safe Training programs, taken by 9 organizations in the animal services sector across Canada with positive feedback.
+    hr
+    +section("Education")
+        +item("School of Art, University of Manitoba", null, "September 2018–May 2022")
+            p BFA Studio Art (Concentration in Graphic Design)

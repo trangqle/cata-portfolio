@@ -11,6 +11,13 @@
 }
 
 /* text formatting */
+details > summary {
+    list-style: none;
+}
+/* safari doesn't like working on things the easy way */
+::-webkit-details-marker {
+    display: none;
+}
 body, h1, h2, p {
     margin: 0;
     line-height: 1.5;
@@ -21,11 +28,12 @@ body, h1, h2, p {
 h1, .cata, .imsad {
     font-family: "FreightDisp Pro Light";
     font-weight: 400;
-    font-size: 3rem;
     line-height: 1.25;
     letter-spacing: 0;
 }
-
+h1 {
+    font-size: 3rem;
+}
 .cata {
     font-size: 2.5rem;
 }
@@ -74,6 +82,11 @@ blockquote {
 /* work link formatting */
 .work {
     --gap: 0.25rem;
+}
+
+.icon {
+    block-size: 1em;
+    inline-size: 1em;
 }
 
 /* layout hooray */
@@ -175,6 +188,14 @@ img {
     padding-block: 10vh;
 }
 
+/* gaps */
+.smolgap > * {
+    --gap: 0.75rem;
+}
+.biggap > * {
+    --gap: 2rem;
+}
+
 /* element specific */
 header {
     position: sticky;
@@ -203,6 +224,23 @@ header {
 footer {
     border-top: 1px solid var(--fg-color);
     padding-block: 0.75vh;
+}
+
+details > summary {
+    cursor: pointer;
+}
+details[open] > summary .icon {
+    transform: rotate(45deg);
+}
+details > summary .icon {
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+hr{
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--fg-color);
 }
 
 
