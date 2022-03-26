@@ -4,8 +4,8 @@ mixin entry(url, title, date, categories, thumb)
         a(href=url)
             .frame
                 img(src=thumb, alt=title)
-            .cluster.work
-                p #{title}
+            .stack.work
+                p.imsad #{title}
                 p #{date}
 
 block text
