@@ -221,6 +221,31 @@ header {
 #header > * {
     text-align: center;
 }
+#header .icon {
+    inline-size: 1.75rem;
+}
+
+.replacements > * {
+    display: none;
+}
+
+.replacements > :first-child {
+    display: unset;
+}
+
+@media screen and (max-width: 60ch) {
+    .replacements > :first-child {
+        display: none;
+    }
+
+    .replacements > :nth-child(2) {
+        display: unset;
+    }
+
+    #header {
+        align-items: center;
+    }
+}
 
 footer {
     border-top: 1px solid var(--fg-color);

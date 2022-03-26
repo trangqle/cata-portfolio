@@ -26,7 +26,10 @@ html
         .cover
             header
                 .thinboi#header
-                    a.cata(href='/') Trang Le
+                    a(href='/')
+                        .cata.replacements
+                            span Trang Le
+                            img.icon(src="/assets/icon.svg" alt="logo")
                     nav.cluster
                         a(href='/') Work
                         a(href='/extra') Extra
