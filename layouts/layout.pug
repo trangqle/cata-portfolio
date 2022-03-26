@@ -4,7 +4,10 @@ html
     head
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0")
-        title test
+        if info
+            title #{info.title} &mdash; Trang Le
+        else
+            title Trang Le
         link(href="/css/layout.css" rel="stylesheet")
         link(href="/assets/icons/favicon-16px.png" rel="icon" sizes="16x16")
         link(href="/assets/icons/favicon-32px.png" rel="icon" sizes="32x32")
