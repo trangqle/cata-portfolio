@@ -3,7 +3,7 @@ layout: /content.pug
 info:
   title: Anemoia
   date: 2020
-  thumb: /assets/work/anemoia/bags.jpg
+  thumb: /assets/work/anemoia/cards.jpg
   categories: Branding
 imglist:
   - url: /assets/work/anemoia/box.jpg
