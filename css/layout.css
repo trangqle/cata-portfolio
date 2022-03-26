@@ -176,6 +176,7 @@ img {
 }
 .frame {
     aspect-ratio: 1;
+    overflow: hidden;
 }
 .frame > img, .frame > video {
     inline-size: 100%;
@@ -243,6 +244,12 @@ hr{
     border-top: 1px solid var(--fg-color);
 }
 
+.nyoom:hover > *, .nyoom:focus > * {
+    transform: scale(1.05);
+}
+.nyoom > * {
+    transition: all 0.2s ease;
+}
 
 /* fontssssss */
 @font-face {
