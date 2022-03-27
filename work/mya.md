@@ -4,7 +4,7 @@ info:
   title: Mya
   date: 2021
   thumb: /assets/work/mya/topbox.jpg
-  categories: Personal project / Branding, Web Design
+  categories: Branding, Conceptual Work
 imglist:
   - url: /assets/work/mya/topbox.jpg
     alt: packing box topview

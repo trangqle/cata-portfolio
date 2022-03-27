@@ -4,7 +4,7 @@ info:
   title: The Crafty Cub
   date: 2021
   thumb: /assets/work/cub/thumb.jpg
-  categories: Personal project / Branding, Web Design
+  categories: Branding, Web Design, Conceptual Work
 imglist:
   - url: /assets/work/cub/mockup.jpg
     alt: mockup

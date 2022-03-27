@@ -4,7 +4,7 @@ info:
   title: Synthetic Visions
   date: 2022
   thumb: /assets/work/sv/horizontalbanner2.jpg
-  categories: Exhibition Design, Poster Design
+  categories: Exhibition Design, Poster Design, Conceptual Work
 imglist:
   - url: /assets/work/sv/posters.jpg
     alt: posters
