@@ -4,7 +4,7 @@ info:
   title: Anemoia
   date: 2020
   thumb: /assets/work/anemoia/cards.jpg
-  categories: Branding
+  categories: Branding, Packaging Design
 imglist:
   - url: /assets/work/anemoia/box.jpg
     alt: packing box
