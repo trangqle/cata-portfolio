@@ -10,7 +10,10 @@ block content
     .stack
         if imglist
             each img in imglist
-                img(src=img.url, alt=img.alt)
+                if img.video
+                    video(src=img.url autoplay muted loop alt=img.alt)
+                else
+                    img(src=img.url, alt=img.alt)
 
         if tags=="work"
             nav.cluster
