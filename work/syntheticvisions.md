@@ -16,7 +16,7 @@ imglist:
     alt: typographic poster closeup
   - url: /assets/work/sv/horizontalbanner.jpg
     alt: signage
-  - url: /assets/work/sv/exhibtion.jpg
+  - url: /assets/work/sv/exhibition.jpg
     alt: exhibition wall
   - url: /assets/work/sv/horizontalbanner2.jpg
     alt: signage (light theme)
