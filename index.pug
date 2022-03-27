@@ -13,5 +13,5 @@ block text
         h1 A visual designer who enjoys creating elegantly aesthetic solutions, with a touch of minimalism.
 block overflow
     .grid
-        each work in collections.work
+        each work in collections.work.reverse()
             +entry(work.url, work.data.info.title, work.data.info.date, work.data.info.categories, work.data.info.thumb)

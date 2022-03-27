@@ -1,5 +1,6 @@
 ---
 layout: /content.pug
+date: 2021-08-01
 info:
   title: The Crafty Cub
   date: 2021

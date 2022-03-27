@@ -1,5 +1,6 @@
 ---
 layout: /content.pug
+date: 2021-03-01
 info:
   title: Mya
   date: 2021

@@ -1,5 +1,6 @@
 ---
 layout: /content.pug
+date: 2022-01-01
 info:
   title: Synthetic Visions
   date: 2022

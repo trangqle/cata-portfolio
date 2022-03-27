@@ -1,8 +1,9 @@
 ---
 layout: /content.pug
+date: 2020-06-01
 info:
   title: Vancouver Humane Society
-  date: 2021
+  date: 2020–2021
   thumb: /assets/work/vhs/cover.jpg
   categories: Publication, Miscellaneous
 imglist:
