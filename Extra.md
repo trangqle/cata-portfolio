@@ -2,7 +2,20 @@
 layout: /content-alt.pug
 info:
   title: Extra
+imglist:
+  - url: /assets/extra/1.jpg
+    alt: just more work here folks
+  - url: /assets/extra/2.jpg
+    alt: just more work here folks
+  - url: /assets/extra/3.jpg
+    alt: just more work here folks
+  - url: /assets/extra/4.jpg
+    alt: just more work here folks
+  - url: /assets/extra/5.jpg
+    alt: just more work here folks
+  - url: /assets/extra/6.jpg
+    alt: just more work here folks
 ---
-Too small to be in a project, too important to be left out - welcome to the Extra archive, enjoy your stay.
+Welcome to the Extra archive! Here lies some of my smaller-scale works that are more experimental in nature (aka. being a lil' bit ✨extra✨).
 
-Currently on maintainance.
+More coming soon!
