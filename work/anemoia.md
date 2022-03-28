@@ -1,8 +1,9 @@
 ---
 layout: /content.pug
 date: 2021-07-01
+title: Anemoia
+desc: Branding for Anemoia, an embodiment of the revival of vintage aesthetics.
 info:
-  title: Anemoia
   date: 2021
   thumb: /assets/work/anemoia/cards.jpg
   categories: Branding, Packaging Design

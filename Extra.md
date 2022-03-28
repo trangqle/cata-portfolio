@@ -1,7 +1,6 @@
 ---
 layout: /content-alt.pug
-info:
-  title: Extra
+title: Extra
 imglist:
   - url: /assets/extra/1.jpg
     alt: just more work here folks

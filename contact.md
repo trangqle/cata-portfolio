@@ -1,7 +1,7 @@
 ---
 layout: /content.pug
-info:
-  title: Let's Connect
+title: Let's Connect
+info: uwu
 ---
 [hello@trangqle.design](mailto:hello@example.com)
 

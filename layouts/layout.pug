@@ -7,15 +7,12 @@ html(lang="en" prefix="og: https://ogp.me/ns#")
         - const me = 'https://trang.design'
         meta(property="og:type" content="website")
         meta(property="og:url" content=`${me}${page.url}`)
+        - let metatitle = title ? `${title} \u2014 Trang Le` : 'Trang Le'
+        title= metatitle
+        meta(property="og:title" content=metatitle)
         if info
-            - let title = `${info.title} \u2014 Trang Le`
-            title= title
-            meta(property="og:title" content= title)
             meta(property="og:image" content=`${me}${info.thumb}`)
-
         else
-            title Trang Le
-            meta(property="og:title" content= "Trang Le")
             meta(property="og:image" content=`${me}/assets/genericthumb.jpg`)
         if desc
             meta(name="description", content=desc)

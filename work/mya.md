@@ -1,8 +1,9 @@
 ---
 layout: /content.pug
 date: 2021-03-01
+title: Mya
+desc: Branding for Mya, a fashion label that focuses on silk products.
 info:
-  title: Mya
   date: 2021
   thumb: /assets/work/mya/topbox.jpg
   categories: Branding, Packaging Design, Conceptual Work
