@@ -170,7 +170,7 @@ body {
 }
 
 /* frame */
-img {
+img, video {
     inline-size: 100%;
     block-size: 100%;
 }
