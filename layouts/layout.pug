@@ -1,13 +1,28 @@
 doctype html
 
-html(lang="en")
+html(lang="en" prefix="og: https://ogp.me/ns#")
     head
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0")
+        - const me = 'https://trang.design'
+        meta(property="og:type" content="website")
+        meta(property="og:url" content=`${me}${page.url}`)
         if info
-            title #{info.title} &mdash; Trang Le
+            - let title = `${info.title} \u2014 Trang Le`
+            title= title
+            meta(property="og:title" content= title)
+            meta(property="og:image" content=`${me}${info.thumb}`)
+
         else
             title Trang Le
+            meta(property="og:title" content= "Trang Le")
+            meta(property="og:image" content=`${me}/assets/genericthumb.jpg`)
+        if desc
+            meta(name="description", content=desc)
+            meta(property="og:description", content=desc)
+        else
+            meta(name="description", content="A visual designer specializing in branding and editorial.")
+            meta(property="og:description", content="A visual designer specializing in branding and editorial.")
         link(href="/css/layout.css" rel="stylesheet")
         //- For all browsers
         link(href="/assets/icons/favicon-16px.png" type="image/png" rel="icon" sizes="16x16")
