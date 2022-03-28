@@ -22,11 +22,11 @@ body, h1, h2, p {
     margin: 0;
     line-height: 1.5;
     letter-spacing: -0.03em;
-    font-family: "Untitled Sans";
+    font-family: "Untitled Sans", Arial, Helvetica, sans-serif;
     color: var(--fg-color);
 }
 h1, .cata, .imsad {
-    font-family: "FreightDisp Pro Light";
+    font-family: "FreightDisp Pro Light", 'Times New Roman', Times, serif;
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: 0;
@@ -280,6 +280,7 @@ hr{
 @font-face {
     font-family: "FreightDisp Pro Light";
     font-weight: 400;
+    font-display: swap;
     src: url('/assets/fonts/FreightDispProLight-Regular.woff2') format('woff2'),
          url('/assets/fonts/FreightDispProLight-Regular.woff') format('woff');
 }
@@ -287,6 +288,7 @@ hr{
 @font-face {
     font-family: "Untitled Sans";
     font-weight: 400;
+    font-display: swap;
     src: url('/assets/fonts/UntitledSans-Regular.woff2') format('woff2'),
          url('/assets/fonts/UntitledSans-Regular.woff') format('woff');
 }
@@ -294,6 +296,7 @@ hr{
 @font-face {
     font-family: "Untitled Sans";
     font-weight: 700;
+    font-display: swap;
     src: url('/assets/fonts/UntitledSans-Medium.woff2') format('woff2'),
          url('/assets/fonts/UntitledSans-Medium.woff') format('woff');
 }
