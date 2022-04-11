@@ -306,3 +306,21 @@ hr{
     src: url('/assets/fonts/UntitledSans-Medium.woff2') format('woff2'),
          url('/assets/fonts/UntitledSans-Medium.woff') format('woff');
 }
+
+.anim-underline {
+    overflow: hidden;
+    position: relative;
+}
+.anim-underline:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    height: 1px;
+    background: var(--fg-color);
+    transition: all 0.2s ease-out;
+}
+.anim-underline:hover:before, .anim-underline:focus:before {
+    right: 0;
+}
