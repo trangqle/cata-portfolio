@@ -307,11 +307,12 @@ hr{
          url('/assets/fonts/UntitledSans-Medium.woff') format('woff');
 }
 
+/* animations */
 .anim-underline {
     overflow: hidden;
     position: relative;
 }
-.anim-underline:before {
+.anim-underline::before {
     content: "";
     position: absolute;
     left: 0;
@@ -321,6 +322,31 @@ hr{
     background: var(--fg-color);
     transition: all 0.2s ease-out;
 }
-.anim-underline:hover:before, .anim-underline:focus:before {
+.anim-underline:hover::before, .anim-underline:focus::before {
     right: 0;
+}
+
+.anim-iconback, .anim-iconfwd {
+    display: flex;
+    align-items: baseline;
+    gap: 0.2em;
+}
+.anim-iconback::before, .anim-iconfwd::after {
+    content: "";
+    display: inline-block;
+    height: 0.5em;
+    width: 0.5em;
+    transition: all 0.2s ease-out;
+}
+.anim-iconback::before {
+    background-image: url("/assets/icons/arrow-left.svg");
+}
+.anim-iconfwd::after {
+    background-image: url("/assets/icons/arrow-right.svg");
+}
+.anim-iconback:hover::before {
+    transform: translateX(-0.25em);
+}
+.anim-iconfwd:hover::after {
+    transform: translateX(0.25em);
 }
