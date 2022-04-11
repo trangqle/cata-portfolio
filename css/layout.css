@@ -127,9 +127,10 @@ body {
 
 /* grid */
 .grid {
+    --size: 30%;
     display: grid;
     grid-gap: 3rem var(--gap);
-    grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, calc(30% + var(--gap)), 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, calc(var(--size) + var(--gap)), 100%), 1fr));
 }
 
 /* cluster */
@@ -198,6 +199,10 @@ img, video {
 }
 
 /* element specific */
+#extra {
+    --size: 40%;
+}
+
 header {
     position: sticky;
     top: 0;
