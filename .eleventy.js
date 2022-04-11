@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
     // Configure markdown generator
     let md = require("markdown-it")()
               .use(require("markdown-it-block-image"))
+              .use(require("markdown-it-attrs"))
     eleventyConfig.setLibrary("md", md)
 
     global.filters = eleventyConfig.javascriptFunctions
