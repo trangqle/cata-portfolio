@@ -127,9 +127,10 @@ body {
 
 /* grid */
 .grid {
+    --size: 30%;
     display: grid;
     grid-gap: 3rem var(--gap);
-    grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, calc(30% + var(--gap)), 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(clamp(20rem, calc(var(--size) + var(--gap)), 100%), 1fr));
 }
 
 /* cluster */
@@ -198,6 +199,11 @@ img, video {
 }
 
 /* element specific */
+#extra {
+    --size: 40%;
+    grid-gap: var(--gap);
+}
+
 header {
     position: sticky;
     top: 0;
@@ -299,4 +305,48 @@ hr{
     font-display: swap;
     src: url('/assets/fonts/UntitledSans-Medium.woff2') format('woff2'),
          url('/assets/fonts/UntitledSans-Medium.woff') format('woff');
+}
+
+/* animations */
+.anim-underline {
+    overflow: hidden;
+    position: relative;
+}
+.anim-underline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    height: 1px;
+    background: var(--fg-color);
+    transition: all 0.2s ease-out;
+}
+.anim-underline:hover::before, .anim-underline:focus::before {
+    right: 0;
+}
+
+.anim-iconback, .anim-iconfwd {
+    display: flex;
+    align-items: baseline;
+    gap: 0.2em;
+}
+.anim-iconback::before, .anim-iconfwd::after {
+    content: "";
+    display: inline-block;
+    height: 0.5em;
+    width: 0.5em;
+    transition: all 0.2s ease-out;
+}
+.anim-iconback::before {
+    background-image: url("/assets/icons/arrow-left.svg");
+}
+.anim-iconfwd::after {
+    background-image: url("/assets/icons/arrow-right.svg");
+}
+.anim-iconback:hover::before {
+    transform: translateX(-0.25em);
+}
+.anim-iconfwd:hover::after {
+    transform: translateX(0.25em);
 }
