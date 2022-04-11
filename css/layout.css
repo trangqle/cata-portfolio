@@ -201,6 +201,7 @@ img, video {
 /* element specific */
 #extra {
     --size: 40%;
+    grid-gap: var(--gap);
 }
 
 header {
