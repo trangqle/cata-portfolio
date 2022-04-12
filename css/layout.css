@@ -72,7 +72,8 @@ a {
 }
 
 p > a {
-    text-decoration: underline;
+    width: fit-content;
+    width: -moz-fit-content;
 }
 
 blockquote {
@@ -80,6 +81,9 @@ blockquote {
     padding-inline-start: 0.75em;
     margin: 0;
     opacity: 0.6;
+}
+small {
+    font-size: 0.75rem;
 }
 
 /* work link formatting */
@@ -258,7 +262,7 @@ header {
 
 footer {
     border-top: 1px solid var(--fg-color);
-    padding-block: 0.75vh;
+    padding-block: 1.25vh;
 }
 
 details > summary {
@@ -312,7 +316,7 @@ hr{
 
 /* animations */
 .anim-underline {
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 .anim-underline::before {
