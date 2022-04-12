@@ -16,7 +16,7 @@ mixin item(name, job, date)
     details.stack
         summary.stack.smolgap
             .cluster
-                strong= name
+                strong.anim-underline= name
                 img.icon(src="/assets/icons/plus.svg", alt="expand")
             if job
                 p #{job} &mdash; #{date}
