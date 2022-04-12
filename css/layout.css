@@ -72,7 +72,8 @@ a {
 }
 
 p > a {
-    text-decoration: underline;
+    width: fit-content;
+    width: -moz-fit-content;
 }
 
 blockquote {
@@ -315,7 +316,7 @@ hr{
 
 /* animations */
 .anim-underline {
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 .anim-underline::before {
