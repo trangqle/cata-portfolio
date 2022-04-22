@@ -14,6 +14,10 @@ imglist:
     alt: just more work here folks
   - url: /assets/extra/6.jpg
     alt: just more work here folks
+  - url: /assets/extra/7.jpg
+    alt: just more work here folks
+  - url: /assets/extra/8.jpg
+    alt: just more work here folks
 ---
 Welcome to the Extra archive! Here lies some of my smaller-scale works that are more experimental in nature (aka. being a lil' bit ✨extra✨).
 
