@@ -5,9 +5,11 @@ title: Vancouver Humane Society
 desc: In June 2021, I worked with researchers of VHS to create publications of their report, Helping People and Animals Together - Taking a Trauma-Informed, Culturally Safe Approach Towards Assisting Placed-at-Risk People with Addressing Animal Neglect
 info:
   date: 2020–2021
-  thumb: /assets/work/vhs/cover.jpg
+  thumb: /assets/work/vhs/spread.jpg
   categories: Publication, Miscellaneous
 imglist:
+  - url: /assets/work/vhs/spread.jpg
+    alt: report cover
   - url: /assets/work/vhs/cover.jpg
     alt: report cover
   - url: /assets/work/vhs/page1.jpg
